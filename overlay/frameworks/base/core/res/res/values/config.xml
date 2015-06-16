@@ -57,19 +57,19 @@
         than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>15</item>   <!-- 0-3 -->
-        <item>25</item>   <!-- 3-6 -->
-        <item>50</item>   <!-- 6-12 -->
-        <item>65</item>   <!-- 12-19 -->
-        <item>70</item>   <!-- 19-25 -->
-        <item>80</item>   <!-- 25-50 -->
-        <item>117</item>  <!-- 50-100 -->
-        <item>135</item>  <!-- 100-150 -->
-        <item>150</item>  <!-- 150-200 -->
-        <item>170</item>  <!-- 200-300 -->
-        <item>190</item>  <!-- 300-400 -->
-        <item>230</item>  <!-- 400-600 -->
-        <item>250</item>  <!-- 600-900 -->
+        <item>30</item>   <!-- 0-3 -->
+        <item>60</item>   <!-- 3-6 -->
+        <item>100</item>  <!-- 6-12 -->
+        <item>120</item>  <!-- 12-19 -->
+        <item>140</item>  <!-- 19-25 -->
+        <item>150</item>  <!-- 25-50 -->
+        <item>160</item>  <!-- 50-100 -->
+        <item>170</item>  <!-- 100-150 -->
+        <item>180</item>  <!-- 150-200 -->
+        <item>190</item>  <!-- 200-300 -->
+        <item>200</item>  <!-- 300-400 -->
+        <item>220</item>  <!-- 400-600 -->
+        <item>240</item>  <!-- 600-900 -->
         <item>255</item>  <!-- 900+ -->
     </integer-array>
 
@@ -88,7 +88,7 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">135</integer>
+    <integer name="config_screenBrightnessSettingDefault">150</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting

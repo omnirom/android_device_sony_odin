@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012-2013 The CyanogenMod Project
+ * Copyright (C) 2014-2015 OmniROM Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,4 +18,4 @@
 char const*const LCD_BACKLIGHT_FILE  = "/sys/class/leds/lm3533-lcd-bl-1/brightness";
 char const*const LCD_BACKLIGHT2_FILE = "/sys/class/leds/lm3533-lcd-bl-2/brightness";
 char const*const MAX_BRIGHTNESS_FILE = "/sys/class/leds/lm3533-lcd-bl-1/max_brightness";
-const int LCD_BRIGHTNESS_MIN         = 128;
+const int LCD_BRIGHTNESS_MIN         = 150;
