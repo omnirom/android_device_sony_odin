@@ -44,7 +44,14 @@ BOARD_HAVE_NEW_QCOM_CSDCLIENT :=
 
 TARGET_DISPLAY_GAMMA_DISABLED := true
 
+# Healthd
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/class/leds/lm3533-red/brightness
+GREEN_LED_PATH := /sys/class/leds/lm3533-green/brightness
+BLUE_LED_PATH := /sys/class/leds/lm3533-blue/brightness
+HEALTHD_BACKLIGHT_ON_LEVEL := 180
+
 # TWRP
 TW_THEME := portrait_hdpi
-TW_BRIGHTNESS_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl-1/brightness
-TW_SECONDARY_BRIGHTNESS_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl-2/brightness
+TW_BRIGHTNESS_PATH := /sys/class/leds/lm3533-lcd-bl-1/brightness
+TW_SECONDARY_BRIGHTNESS_PATH := /sys/class/leds/lm3533-lcd-bl-2/brightness
