@@ -3,15 +3,15 @@ on boot
     chown system system /sys/devices/i2c-2/2-0054/threshold
     chown system system /sys/devices/i2c-2/2-0054/nburst
 
-    # Owner for the light sensor
-    chown system system /sys/devices/i2c-0/0-0036/als_enable
-    chown system system /sys/devices/i2c-0/0-0036/als_result
-
     # Panel backlight
     chown system system /sys/class/leds/lm3533-lcd-bl-1/brightness
     chmod 660 /sys/class/leds/lm3533-lcd-bl-1/brightness
     chown system system /sys/class/leds/lm3533-lcd-bl-2/brightness
     chmod 660 /sys/class/leds/lm3533-lcd-bl-2/brightness
+
+    # Set default brightness for boot
+    write /sys/class/leds/lm3533-lcd-bl-1/brightness 140
+    write /sys/class/leds/lm3533-lcd-bl-2/brightness 140
 
     # Vibrator
     chown system system /sys/devices/i2c-2/2-0049/intensity
