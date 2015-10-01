@@ -14,8 +14,8 @@ on boot
     chmod 660 /sys/class/leds/lm3533-lcd-bl-2/brightness
 
     # Set default brightness for boot
-    write /sys/class/leds/lm3533-lcd-bl-1/brightness 127
-    write /sys/class/leds/lm3533-lcd-bl-2/brightness 127
+    write /sys/class/leds/lm3533-lcd-bl-1/brightness 255
+    write /sys/class/leds/lm3533-lcd-bl-2/brightness 255
 
     # Vibrator
     chown system system /sys/devices/i2c-2/2-0049/intensity
